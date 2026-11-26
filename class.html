@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Document</title>
+</head>
+
+<!-- PROMOTIONAL BAR -->
+<div class="promo-bar" id="promoBar">
+    <div class="vamtam-logo">
+        <span class="v-icon">VΛ</span>
+        <span>VAMTAM</span>
+    </div>
+    <button class="fiore-select">
+        Fiore <span>⌄</span>
+    </button>
+    <div class="promo-right">
+        <div class="discount">
+            Deals up to <strong>70% OFF</strong>
+        </div>
+        <a href="#shop" class="buy-now">Buy now</a>
+        <button class="close-promo" id="closePromo">×</button>
+    </div>
+</div>
+
+<!-- MAIN HEADER -->
+
+<header class="header">
+ <div class="container">
+    <div class="header-top">
+        <button class="search-btn" id="searchBtn">
+            SEARCH
+        </button>
+    
+        <a href="#" class="main-logo">
+            Fiōre
+        </a>
+        <!-- HEADER ICONS -->
+        <div class="header-icons">
+            <a href="#account">ACCOUNT</a>
+            <button class="icon-btn wishlist" id="wishlistBtn">
+                ♡
+            </button>
+            <a href="#bag" class="cart-icon">
+                ♧
+                <span>0</span>
+            </a>
+            <button class="mobile-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+    <!-- DESKTOP NAVIGATION -->
+    <nav class="navigation">
+        <a href="#" class="active">HOME</a>
+        <a href="#flowers">FLOWERS</a>
+        <a href="#plants">PLANTS</a>
+        <a href="#services">SERVICES</a>
+        <a href="#classes">FLORAL CLASSES</a>
+        <a href="#story">OUR STORY</a>
+        <a href="#blog">BLOG</a>
+    </nav>
+    <!-- MOBILE NAVIGATION -->
+    <nav class="mobile-navigation" id="mobileNav">
+        <a href="#">HOME</a>
+        <a href="#flowers">FLOWERS</a>
+        <a href="#plants">PLANTS</a>
+        <a href="#services">SERVICES</a>
+        <a href="#classes">FLORAL CLASSES</a>
+        <a href="#story">OUR STORY</a>
+        <a href="#blog">BLOG</a>
+    </nav>
+    <!-- SEARCH BAR -->
+    <div class="search-box" id="searchBox">
+        <input type="search" placeholder="Search flowers...">
+        <button type="button" id="searchClose">×</button>
+    </div>
+ </div>
+</header>
+
+<!-- COURSE PRODUCT -->
+    <section class="course-section section-container">
+
+        <div class="course-gallery">
+            <img class="course-main-img"
+                src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?w=1000"
+                alt="Florist arranging flowers">
+
+            <img
+                src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?w=1000"
+                alt="Floral arrangement">
+        </div>
+
+        <div class="course-info">
+            <h1>Floristry Fundamentals<br>Course</h1>
+            <p class="course-price">$960.00</p>
+
+            <label for="course-date">Select course date</label>
+            <select id="course-date">
+                <option>Friday, 31 December</option>
+                <option>Friday, 15 January</option>
+                <option>Friday, 28 January</option>
+            </select>
+
+            <div class="cart-controls">
+                <div class="quantity">
+                    <button class="quantity-minus">−</button>
+                    <input type="number" value="1" min="1" max="20" id="quantity">
+                    <button class="quantity-plus">+</button>
+                </div>
+
+                <button class="cart-btn">ADD TO CART</button>
+                <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            </div>
+
+            <div class="course-description">
+                <p>
+                    Filled with essential skills and projects this one week
+                    course is the perfect introduction to the world of luxury floristry.
+                </p>
+
+                <p>
+                    You will be guided by our expert team during every step
+                    of the way as you focus on the building blocks of the
+                    craft and establishing a strong foundation of floral knowledge.
+                </p>
+
+                <p>
+                    At the core of this module is an insight to retail floristry,
+                    with students learning the opportunity to create a range
+                    of fresh designs.
+                </p>
+
+                <p>
+                    For further details regarding our workshops and courses
+                    please contact our school team.
+                </p>
+
+                <p>Call: +44 (0) 207 739 1521</p>
+                <p>www.fioreflowers.com</p>
+            </div>
+
+            <div class="course-social">
+                <a href="#">♥</a><a href="#">f</a><a href="#">ⓟ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCORDION -->
+    <section class="more-info section-container">
+        <h2>More Information</h2>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-title">Arrival time <span>+</span></button>
+                <div class="accordion-content">
+                    Please arrive 15 minutes before the scheduled course start time.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-title">Equipment <span>+</span></button>
+                <div class="accordion-content">
+                    All essential floristry equipment and materials are provided.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-title">Certificates <span>+</span></button>
+                <div class="accordion-content">
+                    Students receive a course completion certificate.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-title">Accreditation <span>+</span></button>
+                <div class="accordion-content">
+                    Contact our course team for accreditation information.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-title">Covid policy <span>+</span></button>
+                <div class="accordion-content">
+                    Please contact us for the latest course attendance policy.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-title">Flowers <span>+</span></button>
+                <div class="accordion-content">
+                    Fresh seasonal flowers are provided for practical sessions.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-title">Deposit notice for Career Course <span>+</span></button>
+                <div class="accordion-content">
+                    Please contact the school team for deposit information.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-title">More information about the courses <span>+</span></button>
+                <div class="accordion-content">
+                    Contact our team for more details about our floristry courses.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="why-course section-container">
+        <div class="why-course-image">
+            <img src="image/1.jpg" alt="Floristry workshop">
+        </div>
+        <div class="why-course-content">
+            <h2>Why Choose Fiore<br>Flower Courses</h2>
+            <p>
+                The Fiore Courses is an immersive learning experience aimed
+                at anyone with a keen interest in floristry. Our collection
+                of video courses and content has been carefully designed
+                and curated by some of the leading professional florists
+                in their field.
+            </p>
+        </div>
+    </section>
+
+    <!-- RELATED COURSES -->
+    <section class="related-courses section-container">
+        <h2>You might also like</h2>
+        <div class="related-grid">
+            <article>
+                <img src="image/3.webp" alt="Event flowers">
+                <h3>Events & Celebrations Course</h3>
+                <p>$1,675.00</p>
+            </article>
+            <article>
+                <img src="image/4.webp" alt="Floral installation">
+                <h3>Floral Installation Course</h3>
+                <p>$1,675.00</p>
+            </article>
+            <article>
+                <img src="image/5.webp" alt="Wedding flowers">
+                <h3>Wedding Floristry Course</h3>
+                <p>$1,825.00</p>
+            </article>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <a class="footer-logo" href="#">Fiòre</a>
+            <p>Goddard Hall 80<br>Washington Square E,<br>New York, NY 10003, USA</p>
+            <p>+44 (0) 207 739 1521<br>info@fiore.com</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">My account</a><a href="#">FAQ</a>
+            <a href="#">Check Order Status</a><a href="#">Store Locator</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-social">
+            <p>Follow us</p>
+            <div class="social-icons">
+                <a href="#">◎</a><a href="#">f</a><a href="#">ⓟ</a><a href="#">▶</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 VamTam. All rights reserved.</span>
+        <div><a href="#">Privacy Policy</a><a href="#">Cookie Policy</a></div>
+    </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>

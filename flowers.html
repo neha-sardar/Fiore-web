@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Document</title>
+</head>
+<body>
+    <!-- PROMOTIONAL BAR -->
+<div class="promo-bar" id="promoBar">
+    <div class="vamtam-logo">
+        <span class="v-icon">VΛ</span>
+        <span>VAMTAM</span>
+    </div>
+    <button class="fiore-select">
+        Fiore <span>⌄</span>
+    </button>
+    <div class="promo-right">
+        <div class="discount">
+            Deals up to <strong>70% OFF</strong>
+        </div>
+        <a href="#shop" class="buy-now">Buy now</a>
+        <button class="close-promo" id="closePromo">×</button>
+    </div>
+</div>
+
+<!-- MAIN HEADER -->
+
+<header class="header">
+ <div class="container">
+    <div class="header-top">
+        <button class="search-btn" id="searchBtn">
+            SEARCH
+        </button>
+    
+        <a href="#" class="main-logo">
+            Fiōre
+        </a>
+        <!-- HEADER ICONS -->
+        <div class="header-icons">
+            <a href="#account">ACCOUNT</a>
+            <button class="icon-btn wishlist" id="wishlistBtn">
+                ♡
+            </button>
+            <a href="#bag" class="cart-icon">
+                ♧
+                <span>0</span>
+            </a>
+            <button class="mobile-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+    <!-- DESKTOP NAVIGATION -->
+    <nav class="navigation">
+        <a href="#" class="active">HOME</a>
+        <a href="#flowers">FLOWERS</a>
+        <a href="#plants">PLANTS</a>
+        <a href="#services">SERVICES</a>
+        <a href="#classes">FLORAL CLASSES</a>
+        <a href="#story">OUR STORY</a>
+        <a href="#blog">BLOG</a>
+    </nav>
+    <!-- MOBILE NAVIGATION -->
+    <nav class="mobile-navigation" id="mobileNav">
+        <a href="#">HOME</a>
+        <a href="#flowers">FLOWERS</a>
+        <a href="#plants">PLANTS</a>
+        <a href="#services">SERVICES</a>
+        <a href="#classes">FLORAL CLASSES</a>
+        <a href="#story">OUR STORY</a>
+        <a href="#blog">BLOG</a>
+    </nav>
+    <!-- SEARCH BAR -->
+    <div class="search-box" id="searchBox">
+        <input type="search" placeholder="Search flowers...">
+        <button type="button" id="searchClose">×</button>
+    </div>
+ </div>
+</header>
+
+<!-- MAIN -->
+<main>
+    <section class="shop-section container">
+
+        <div class="breadcrumb">
+            <a href="#">Home</a> / <span>Flowers</span>
+        </div>
+
+        <h1 class="page-title">Flowers</h1>
+
+        <div class="shop-layout">
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+
+                <button class="clear-filter" id="clearFilters">
+                    Clear all
+                </button>
+
+                <div class="filter-group">
+                    <button class="filter-heading">
+                        Price Range <span>⌄</span>
+                    </button>
+                    <div class="filter-content">
+                        <label><input type="checkbox" class="price-filter" value="0-60"> $0 - $60</label>
+                        <label><input type="checkbox" class="price-filter" value="60-100"> $60 - $100</label>
+                        <label><input type="checkbox" class="price-filter" value="100-200"> $100 - $200</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <button class="filter-heading">
+                        Category <span>⌄</span>
+                    </button>
+                    <div class="filter-content">
+                        <label><input type="checkbox" class="category-filter" value="Bouquet"> Bouquets</label>
+                        <label><input type="checkbox" class="category-filter" value="Roses"> Roses</label>
+                        <label><input type="checkbox" class="category-filter" value="Tulips"> Tulips</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <button class="filter-heading">
+                        Color <span>⌄</span>
+                    </button>
+                    <div class="filter-content">
+                        <label><input type="checkbox" class="color-filter" value="Pink"> Pink</label>
+                        <label><input type="checkbox" class="color-filter" value="White"> White</label>
+                        <label><input type="checkbox" class="color-filter" value="Green"> Green</label>
+                        <label><input type="checkbox" class="color-filter" value="Mixed"> Mixed</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <button class="filter-heading">
+                        Brand <span>⌄</span>
+                    </button>
+                    <div class="filter-content">
+                        <label><input type="checkbox"> Fiōre Collection</label>
+                        <label><input type="checkbox"> Signature Flowers</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <button class="filter-heading">
+                        Customer Rating <span>⌄</span>
+                    </button>
+                    <div class="filter-content">
+                        <label><input type="checkbox" class="rating-filter" value="5"> ★★★★★</label>
+                        <label><input type="checkbox" class="rating-filter" value="4"> ★★★★ & up</label>
+                    </div>
+                </div>
+
+            </aside>
+
+            <!-- PRODUCTS -->
+            <section class="products-area">
+
+                <div class="products-toolbar">
+                    <p id="productCount">Showing 1–12 of 18 results</p>
+
+                    <select id="sortProducts" aria-label="Sort products">
+                        <option value="default">Default</option>
+                        <option value="low">Price: Low to High</option>
+                        <option value="high">Price: High to Low</option>
+                        <option value="name">Name: A to Z</option>
+                    </select>
+                </div>
+
+                <div class="product-grid" id="productGrid">
+
+                    <!-- Product cards are generated by JavaScript -->
+
+                </div>
+
+                <div class="pagination" id="pagination"></div>
+
+            </section>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">Fiōre</a>
+                <p>
+                    Coddard Hall 80<br>
+                    Washington Square E,<br>
+                    New York, NY 10003, USA
+                </p>
+                <p>
+                    +44 (0) 207 739 1521<br>
+                    info@ferme.com
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>My account</h3>
+                <a href="#">FAQ</a>
+                <a href="#">Check Order Status</a>
+                <a href="#">Store Locator</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="footer-social">
+                <p>Follow us</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram">◎</a>
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Pinterest">p</a>
+                    <a href="#" aria-label="YouTube">▶</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 VamTam. All rights reserved.</p>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
